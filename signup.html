@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <style>body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f8ff; /* baby blue */
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    
+    .container {
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .image-container {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #e0f7fa; /* very light blue */
+    }
+    
+    .image-border {
+        border: 5px solid #add8e6; /* light blue */
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    
+    .image-container img {
+        width: 300px;
+        height: 400px;
+        object-fit: cover;
+    }
+    
+    .form-container {
+        background-color: #e0f7fa; /* white */
+        padding: 20px;
+        box-sizing: border-box;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    h1 {
+        text-align: center;
+        color: #0000ff; /* blue */
+    }
+    
+    form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    label {
+        margin-top: 10px;
+        color: #0000ff; /* blue */
+    }
+    
+    input {
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    button {
+        margin-top: 20px;
+        padding: 10px;
+        background-color: #0000ff; /* blue */
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    
+    button:hover {
+        background-color: #00008b; /* dark blue */
+    }
+    </style>
+    <div class="container">
+        <div class="image-container">
+            <div class="image-border">
+                <img src="flat-background-world-diabetes-day-awareness_52683-139409 (1).avif" alt="Sign Up Image">
+            </div>
+        </div>
+        <div class="form-container">
+            <h1>Sign Up</h1>
+            <form action="sign _in.html">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+                
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+                
+                <label for="sugar-level">Blood sugar level</label>
+                <input type="text" id="sugar-level" name="sugar-level" required>
+                
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

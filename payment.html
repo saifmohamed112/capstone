@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+    
+    </header>
+    <style>body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+    }
+    
+    header {
+        background-color: #90e0ef;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+    }
+    
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+    }
+    
+    form {
+        width: 300px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    label {
+        margin-bottom: 5px;
+        display: block;
+    }
+    
+    input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    button {
+        display: block;
+        width: 100%;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: #0056b3;
+    }
+    
+    footer {
+        background-color: #90e0ef;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+    }
+    .menu li {
+    padding: 8px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu-visible {
+    display: block;
+}
+
+nav {
+      display: flex;
+      justify-content: space-around;
+      background-color: #0cc1e6;
+      padding: 10px;
+      border-radius: 22px;
+   
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+    }
+    </style>
+    <header>
+        <h1 style=" font-style: italic;font-size: xx-large; color: #000000">payment page</h1>
+        <div class="header-container">
+            <div class="user-info">
+                <span class="email">user@example.com</span>
+            </div>
+            <div class="shopping-cart">
+                <a href="#">
+                    <img src="shopping-cart-icon.png" alt="Shopping Cart">
+                </a>
+            </div>
+        </div>
+        <nav>
+            <a href="product.html">Biscuits</a>
+            <a href="">chocolate</a>
+            <a href="productdr.html">Pressure devices</a>
+            <a href="diabit.html">Diabetic devices</a>
+            <a href="">Cake machines </a>
+            <a href="chat.html">Chat</a>
+            <a href="pharmcy.html">Pharmacies</a>
+            <a href="">Payment</a>
+          </nav>
+    </header>
+    <div class="container">
+        <form id="payment-form">
+            <label for="card-number">Card Number:</label>
+            <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456" required>
+            
+            <label for="expiry-date">Expiry Date:</label>
+            <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required>
+            
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" placeholder="123" required>
+            
+            <label for="name">Cardholder Name:</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required>
+
+            <button type="submit">Pay Now</button>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2024 Payment Inc.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz</title>
+</head>
+<body>
+  <h1>Quiz</h1>
+
+  <form id="quizForm">
+    <div>
+      <label for="question1">Question 1:</label>
+      <input type="radio" name="question1" value="a">A
+      <input type="radio" name="question1" value="b">B
+      <input type="radio" name="question1" value="c">C
+    </div>
+
+    <div>
+      <label for="question2">Question 2:</label>
+      <input type="radio" name="question2" value="a">A
+      <input type="radio" name="question2" value="b">B
+      <input type="radio" name="question2" value="c">C
+    </div>
+
+    <div>
+      <label for="question3">Question 3:</label>
+      <input type="radio" name="question3" value="a">A
+      <input type="radio" name="question3" value="b">B
+      <input type="radio" name="question3" value="c">C
+    </div>
+
+    <div>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username">
+    </div>
+
+    <button type="button" onclick="showQuizResult()">Submit</button>
+  </form>
+
+  <script>
+    function showQuizResult() {
+      const username = document.getElementById('username').value;
+      const answers = {
+        question1: document.querySelector('input[name="question1"]:checked')?.value,
+        question2: document.querySelector('input[name="question2"]:checked')?.value,
+        question3: document.querySelector('input[name="question3"]:checked')?.value
+      };
+
+      // Define the correct answers
+      const correctAnswers = {
+        question1: 'b',
+        question2: 'a',
+        question3: 'c'
+      };
+
+      // Calculate the number of correct answers
+      let correctCount = 0;
+      for (const [question, answer] of Object.entries(answers)) {
+        if (answer === correctAnswers[question]) {
+          correctCount++;
+        }
+      }
+
+      // Compose the result message
+      const resultMessage = `
+        Username: ${username}
+        Correct Answers: ${correctCount} out of 3
+      `;
+
+      // Display the result
+      alert(resultMessage);
+    }
+  </script>
+</body>
+</html>
